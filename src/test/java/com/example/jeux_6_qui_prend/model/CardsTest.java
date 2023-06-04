@@ -1,17 +1,19 @@
 package com.example.jeux_6_qui_prend.model;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-//import static org.mockito.Mockito.*;
+
+import java.util.List;
+
+import static org.mockito.Mockito.*;
+
 class CardsTest {
     @Mock
-    java.util.List<com.example.jeux_6_qui_prend.model.Card> cards;
-    @InjectMocks
-    com.example.jeux_6_qui_prend.model.Cards cards;
+    List<Card> cards;
 
     @BeforeEach
     void setUp() {
@@ -19,27 +21,27 @@ class CardsTest {
     }
 
     @Test
-    void testCardOf(){
-        com.example.jeux_6_qui_prend.model.Card result = Cards.cardOf(0);
-        Assertions.assertEquals(new com.example.jeux_6_qui_prend.model.Card(0, 0), result);
+    void testCardOf() {
+        Card result = Cards.cardOf(0);
+        Assertions.assertEquals(new Card(0, 0), result);
     }
 
     @Test
-    void testCardPenalty(){
+    void testCardPenalty() {
         int result = Cards.cardPenalty(0);
         Assertions.assertEquals(0, result);
     }
 
     @Test
-    void testDistributeRandomCards(){
-        java.util.List<com.example.jeux_6_qui_prend.model.CardSet> result = Cards.distributeRandomCards(0, null);
-        Assertions.assertEquals(java.util.List.of(new com.example.jeux_6_qui_prend.model.CardSet(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0)))), result);
+    void testDistributeRandomCards() {
+        List<CardSet> result = Cards.distributeRandomCards(0, null);
+        Assertions.assertEquals(List.of(new CardSet(List.of(new Card(0, 0)))), result);
     }
 
     @Test
-    void testDistributeRandomCards2(){
-        java.util.List<com.example.jeux_6_qui_prend.model.CardSet> result = Cards.distributeRandomCards(0, null, 0);
-        Assertions.assertEquals(java.util.List.of(new com.example.jeux_6_qui_prend.model.CardSet(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0)))), result);
+    void testDistributeRandomCards2() {
+        List<CardSet> result = Cards.distributeRandomCards(0, null, 0);
+        Assertions.assertEquals(List.of(new CardSet(List.of(new Card(0, 0)))), result);
     }
 }
 

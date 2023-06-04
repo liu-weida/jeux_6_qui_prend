@@ -1,11 +1,11 @@
 package com.example.jeux_6_qui_prend.ui;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
 class PageTransitionTest {
 
     @Test
-    void testSmoothTransition(){
+    void testSmoothTransition() {
         PageTransition.smoothTransition(null, null, null);
     }
 }

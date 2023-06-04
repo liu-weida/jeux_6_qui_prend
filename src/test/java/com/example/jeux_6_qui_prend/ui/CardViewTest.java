@@ -1,25 +1,31 @@
 package com.example.jeux_6_qui_prend.ui;
 
+import com.example.jeux_6_qui_prend.model.Card;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.StackPane;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-//import static org.mockito.Mockito.*;
+
+import static org.mockito.Mockito.*;
+
 class CardViewTest {
     @Mock
-    javafx.scene.layout.Pane component;
+    Pane component;
     @Mock
-    javafx.scene.layout.StackPane stackFrontOrBack;
+    StackPane stackFrontOrBack;
     @Mock
-    javafx.scene.image.ImageView frontImageView;
+    ImageView frontImageView;
     @Mock
-    javafx.scene.image.ImageView backImageView;
+    ImageView backImageView;
     @Mock
-    com.example.jeux_6_qui_prend.model.Card card;
+    Card card;
     @InjectMocks
-    com.example.jeux_6_qui_prend.ui.CardView cardView;
+    CardView cardView;
 
     @BeforeEach
     void setUp() {
@@ -27,13 +33,13 @@ class CardViewTest {
     }
 
     @Test
-    void testToggleCard(){
+    void testToggleCard() {
         cardView.toggleCard();
     }
 
     @Test
-    void testToString(){
-        java.lang.String result = cardView.toString();
+    void testToString() {
+        String result = cardView.toString();
         Assertions.assertEquals("replaceMeWithExpectedResult", result);
     }
 }

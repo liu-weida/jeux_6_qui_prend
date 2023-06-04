@@ -1,29 +1,32 @@
 package com.example.jeux_6_qui_prend.ui;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import javafx.scene.control.Button;
+import javafx.scene.image.Image;
+import javafx.scene.layout.BorderPane;
 import org.junit.jupiter.api.BeforeEach;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-//import static org.mockito.Mockito.*;
+
+import static org.mockito.Mockito.*;
+
 class MenuViewTest {
     @Mock
-    javafx.scene.control.Button playButton;
+    Button playButton;
     @Mock
-    javafx.scene.control.Button quitButton;
+    Button quitButton;
     @Mock
-    javafx.scene.image.Image titleImage;
+    Image titleImage;
     @Mock
-    javafx.scene.layout.BorderPane component;
+    BorderPane component;
     @Mock
-    javafx.scene.image.Image backgroundImage1;
+    Image backgroundImage1;
     @Mock
-    javafx.scene.image.Image backgroundImage2;
+    Image backgroundImage2;
     @Mock
-    javafx.scene.image.Image backgroundImage3;
+    Image backgroundImage3;
     @InjectMocks
-    com.example.jeux_6_qui_prend.ui.MenuView menuView;
+    MenuView menuView;
 
     @BeforeEach
     void setUp() {

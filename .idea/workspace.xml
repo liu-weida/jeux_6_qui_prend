@@ -5,68 +5,85 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ff51e86-59b5-483a-ab3c-2de4519f334d" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/characters/Ai.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/characters/Character.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/characters/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/controller/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/controller/GameController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/core/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/model/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/model/CardSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/model/CardStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/model/Cards.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/model/GameModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/ui/AudioManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/ui/CardImage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/ui/CardView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/ui/GameOverView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/ui/GameView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/ui/MenuView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/ui/PageTransition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/ui/PlayerCreationView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/BGMs/cardClick.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/BGMs/cardIntoPile.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/BGMs/click.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/BGMs/game.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/BGMs/gameOverCheers.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/BGMs/gameOverFireworks.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/BGMs/startPageBGM.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/gameOver.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/gamePage.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/nbCharacter1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/nbCharacter2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/startPage1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/startPage2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/startPage3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/MainTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/characters/AiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/characters/CharacterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/characters/PlayerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/controller/ControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/controller/GameControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/core/GameTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/model/CardSetTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/model/CardStackTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/model/CardTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/model/CardsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/model/GameModelTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/ui/AudioManagerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/ui/CardImageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/ui/CardViewTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/ui/GameOverViewTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/ui/GameViewTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/ui/MenuViewTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/ui/PageTransitionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/ui/PlayerCreationViewTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/characters/Ai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/characters/Ai.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/characters/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/characters/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/characters/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/characters/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/core/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/core/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/model/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/model/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/model/CardSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/model/CardSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/model/CardStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/model/CardStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/model/Cards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/model/Cards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/model/GameModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/model/GameModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/ui/AudioManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/ui/AudioManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/ui/CardImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/ui/CardImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/ui/CardView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/ui/CardView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/ui/GameOverView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/ui/GameOverView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/ui/GameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/ui/GameView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/ui/MenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/ui/MenuView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/ui/PageTransition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/ui/PageTransition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/ui/PlayerCreationView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jeux_6_qui_prend/ui/PlayerCreationView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/13.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/13.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/15.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/15.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/19.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/19.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/20.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/20.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/27.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/27.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/28.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/28.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/29.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/29.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/31.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/31.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/33.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/33.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/34.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/34.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/36.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/36.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/41.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/41.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/45.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/45.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/47.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/47.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/56.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/56.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/59.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/59.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/67.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/67.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/74.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/74.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/75.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/75.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/76.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/76.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/79.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/79.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/81.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/81.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/83.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/83.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/92.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/92.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/95.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/95.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/96.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/96.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/98.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/card/98.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/gameTitle.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/jeux_6_qui_prend/images/mainGame.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/characters/AiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/characters/AiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/characters/CharacterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/characters/CharacterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/characters/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/characters/PlayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/controller/ControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/controller/ControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/controller/GameControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/controller/GameControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/core/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/core/GameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/model/CardSetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/model/CardSetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/model/CardStackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/model/CardStackTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/model/CardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/model/CardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/model/CardsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/model/CardsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/model/GameModelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/model/GameModelTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/ui/AudioManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/ui/AudioManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/ui/CardImageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/ui/CardImageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/ui/CardViewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/ui/CardViewTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/ui/GameOverViewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/ui/GameOverViewTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/ui/GameViewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/ui/GameViewTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/ui/MenuViewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/ui/MenuViewTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/ui/PageTransitionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/ui/PageTransitionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/ui/PlayerCreationViewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/jeux_6_qui_prend/ui/PlayerCreationViewTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,6 +200,12 @@
       <workItem from="1685698950628" duration="315000" />
       <workItem from="1685699281067" duration="345000" />
       <workItem from="1685699648458" duration="422000" />
+      <workItem from="1685700106034" duration="1766000" />
+      <workItem from="1685704335675" duration="1004000" />
+      <workItem from="1685706946083" duration="2093000" />
+      <workItem from="1685709160339" duration="45000" />
+      <workItem from="1685709228078" duration="39000" />
+      <workItem from="1685709931011" duration="205000" />
     </task>
     <servers />
   </component>

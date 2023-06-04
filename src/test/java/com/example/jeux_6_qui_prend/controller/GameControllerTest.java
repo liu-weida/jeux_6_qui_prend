@@ -1,49 +1,66 @@
 package com.example.jeux_6_qui_prend.controller;
 
+import com.example.jeux_6_qui_prend.characters.Ai;
+import com.example.jeux_6_qui_prend.characters.Character;
+import com.example.jeux_6_qui_prend.characters.Player;
+import com.example.jeux_6_qui_prend.model.Card;
+import com.example.jeux_6_qui_prend.model.CardSet;
+import com.example.jeux_6_qui_prend.model.CardStack;
+import com.example.jeux_6_qui_prend.model.GameModel;
+import com.example.jeux_6_qui_prend.ui.CardView;
+import com.example.jeux_6_qui_prend.ui.GameOverView;
+import com.example.jeux_6_qui_prend.ui.GameView;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-//import static org.mockito.Mockito.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.mockito.Mockito.*;
+
 class GameControllerTest {
     @Mock
-    com.example.jeux_6_qui_prend.model.GameModel gameModel;
+    GameModel gameModel;
     @Mock
-    com.example.jeux_6_qui_prend.ui.GameView gameView;
+    GameView gameView;
     @Mock
-    com.example.jeux_6_qui_prend.characters.Player player;
+    Player player;
     @Mock
-    java.util.List<com.example.jeux_6_qui_prend.characters.Ai> aiList;
+    List<Ai> aiList;
     @Mock
-    java.util.List<com.example.jeux_6_qui_prend.model.CardSet> playersCardSet;
+    List<CardSet> playersCardSet;
     @Mock
-    javafx.stage.Stage stage;
+    Stage stage;
     @Mock
-    javafx.scene.Scene gameScene;
+    Scene gameScene;
     @Mock
-    java.util.ArrayList<com.example.jeux_6_qui_prend.model.Card> characterCard;
+    ArrayList<Card> characterCard;
     @Mock
-    java.util.ArrayList<com.example.jeux_6_qui_prend.model.Card> firstCards;
+    ArrayList<Card> firstCards;
     @Mock
-    java.util.ArrayList<com.example.jeux_6_qui_prend.characters.Character> characters;
+    ArrayList<Character> characters;
     @Mock
-    com.example.jeux_6_qui_prend.model.CardStack cardStack1;
+    CardStack cardStack1;
     @Mock
-    com.example.jeux_6_qui_prend.model.CardStack cardStack2;
+    CardStack cardStack2;
     @Mock
-    com.example.jeux_6_qui_prend.model.CardStack cardStack3;
+    CardStack cardStack3;
     @Mock
-    com.example.jeux_6_qui_prend.model.CardStack cardStack4;
+    CardStack cardStack4;
     @Mock
-    java.util.ArrayList<com.example.jeux_6_qui_prend.model.CardStack> cardStacks;
+    ArrayList<CardStack> cardStacks;
     @Mock
-    com.example.jeux_6_qui_prend.model.Card currentCard;
+    Card currentCard;
     @Mock
-    com.example.jeux_6_qui_prend.ui.GameOverView gameOverView;
+    GameOverView gameOverView;
     @InjectMocks
-    com.example.jeux_6_qui_prend.controller.GameController gameController;
+    GameController gameController;
 
     @BeforeEach
     void setUp() {
@@ -51,47 +68,47 @@ class GameControllerTest {
     }
 
     @Test
-    void testStartRound(){
-        when(gameModel.setFirstPileCards(any())).thenReturn(new java.util.ArrayList<>(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0))));
-        when(player.getHand()).thenReturn(new com.example.jeux_6_qui_prend.model.CardSet(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0))));
+    void testStartRound() {
+        when(gameModel.setFirstPileCards(any())).thenReturn(new ArrayList<>(List.of(new Card(0, 0))));
+        when(player.getHand()).thenReturn(new CardSet(List.of(new Card(0, 0))));
 
         gameController.startRound();
     }
 
     @Test
-    void testUpdateScene(){
+    void testUpdateScene() {
         gameController.updateScene();
     }
 
     @Test
-    void testRun(){
-        when(gameModel.setFirstPileCards(any())).thenReturn(new java.util.ArrayList<>(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0))));
-        when(gameView.getCardViews()).thenReturn(new java.util.ArrayList<>(java.util.List.of(new com.example.jeux_6_qui_prend.ui.CardView(null, 0, 0))));
-        when(gameView.getPlayBtns()).thenReturn(new java.util.ArrayList<>(java.util.List.of(null)));
+    void testRun() {
+        when(gameModel.setFirstPileCards(any())).thenReturn(new ArrayList<>(List.of(new Card(0, 0))));
+        when(gameView.getCardViews()).thenReturn(new ArrayList<>(List.of(new CardView(null, 0, 0))));
+        when(gameView.getPlayBtns()).thenReturn(new ArrayList<>(List.of(null)));
         when(gameView.getComboBox()).thenReturn(null);
-        when(player.getHand()).thenReturn(new com.example.jeux_6_qui_prend.model.CardSet(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0))));
+        when(player.getHand()).thenReturn(new CardSet(List.of(new Card(0, 0))));
         when(player.getCanChooseCard()).thenReturn(Boolean.TRUE);
         when(player.getPenality()).thenReturn(0);
         when(cardStack1.getCardCount()).thenReturn(0);
-        when(cardStack1.addMayTakeIfBelowOr6th(any())).thenReturn(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0)));
+        when(cardStack1.addMayTakeIfBelowOr6th(any())).thenReturn(List.of(new Card(0, 0)));
         when(cardStack1.getTopValue()).thenReturn(0);
         when(cardStack1.getSumPenalty()).thenReturn(0);
-        when(cardStack1.getCards()).thenReturn(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0)));
+        when(cardStack1.getCards()).thenReturn(List.of(new Card(0, 0)));
         when(cardStack2.getCardCount()).thenReturn(0);
-        when(cardStack2.addMayTakeIfBelowOr6th(any())).thenReturn(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0)));
+        when(cardStack2.addMayTakeIfBelowOr6th(any())).thenReturn(List.of(new Card(0, 0)));
         when(cardStack2.getTopValue()).thenReturn(0);
         when(cardStack2.getSumPenalty()).thenReturn(0);
-        when(cardStack2.getCards()).thenReturn(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0)));
+        when(cardStack2.getCards()).thenReturn(List.of(new Card(0, 0)));
         when(cardStack3.getCardCount()).thenReturn(0);
-        when(cardStack3.addMayTakeIfBelowOr6th(any())).thenReturn(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0)));
+        when(cardStack3.addMayTakeIfBelowOr6th(any())).thenReturn(List.of(new Card(0, 0)));
         when(cardStack3.getTopValue()).thenReturn(0);
         when(cardStack3.getSumPenalty()).thenReturn(0);
-        when(cardStack3.getCards()).thenReturn(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0)));
+        when(cardStack3.getCards()).thenReturn(List.of(new Card(0, 0)));
         when(cardStack4.getCardCount()).thenReturn(0);
-        when(cardStack4.addMayTakeIfBelowOr6th(any())).thenReturn(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0)));
+        when(cardStack4.addMayTakeIfBelowOr6th(any())).thenReturn(List.of(new Card(0, 0)));
         when(cardStack4.getTopValue()).thenReturn(0);
         when(cardStack4.getSumPenalty()).thenReturn(0);
-        when(cardStack4.getCards()).thenReturn(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0)));
+        when(cardStack4.getCards()).thenReturn(List.of(new Card(0, 0)));
         when(currentCard.getValue()).thenReturn(0);
         when(gameOverView.getScene()).thenReturn(null);
 
@@ -99,34 +116,34 @@ class GameControllerTest {
     }
 
     @Test
-    void testPlayerChoseCard(){
-        when(gameModel.setFirstPileCards(any())).thenReturn(new java.util.ArrayList<>(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0))));
-        when(gameView.getCardViews()).thenReturn(new java.util.ArrayList<>(java.util.List.of(new com.example.jeux_6_qui_prend.ui.CardView(null, 0, 0))));
-        when(gameView.getPlayBtns()).thenReturn(new java.util.ArrayList<>(java.util.List.of(null)));
+    void testPlayerChoseCard() {
+        when(gameModel.setFirstPileCards(any())).thenReturn(new ArrayList<>(List.of(new Card(0, 0))));
+        when(gameView.getCardViews()).thenReturn(new ArrayList<>(List.of(new CardView(null, 0, 0))));
+        when(gameView.getPlayBtns()).thenReturn(new ArrayList<>(List.of(null)));
         when(gameView.getComboBox()).thenReturn(null);
-        when(player.getHand()).thenReturn(new com.example.jeux_6_qui_prend.model.CardSet(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0))));
+        when(player.getHand()).thenReturn(new CardSet(List.of(new Card(0, 0))));
         when(player.getCanChooseCard()).thenReturn(Boolean.TRUE);
         when(player.getPenality()).thenReturn(0);
         when(cardStack1.getCardCount()).thenReturn(0);
-        when(cardStack1.addMayTakeIfBelowOr6th(any())).thenReturn(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0)));
+        when(cardStack1.addMayTakeIfBelowOr6th(any())).thenReturn(List.of(new Card(0, 0)));
         when(cardStack1.getTopValue()).thenReturn(0);
         when(cardStack1.getSumPenalty()).thenReturn(0);
-        when(cardStack1.getCards()).thenReturn(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0)));
+        when(cardStack1.getCards()).thenReturn(List.of(new Card(0, 0)));
         when(cardStack2.getCardCount()).thenReturn(0);
-        when(cardStack2.addMayTakeIfBelowOr6th(any())).thenReturn(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0)));
+        when(cardStack2.addMayTakeIfBelowOr6th(any())).thenReturn(List.of(new Card(0, 0)));
         when(cardStack2.getTopValue()).thenReturn(0);
         when(cardStack2.getSumPenalty()).thenReturn(0);
-        when(cardStack2.getCards()).thenReturn(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0)));
+        when(cardStack2.getCards()).thenReturn(List.of(new Card(0, 0)));
         when(cardStack3.getCardCount()).thenReturn(0);
-        when(cardStack3.addMayTakeIfBelowOr6th(any())).thenReturn(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0)));
+        when(cardStack3.addMayTakeIfBelowOr6th(any())).thenReturn(List.of(new Card(0, 0)));
         when(cardStack3.getTopValue()).thenReturn(0);
         when(cardStack3.getSumPenalty()).thenReturn(0);
-        when(cardStack3.getCards()).thenReturn(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0)));
+        when(cardStack3.getCards()).thenReturn(List.of(new Card(0, 0)));
         when(cardStack4.getCardCount()).thenReturn(0);
-        when(cardStack4.addMayTakeIfBelowOr6th(any())).thenReturn(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0)));
+        when(cardStack4.addMayTakeIfBelowOr6th(any())).thenReturn(List.of(new Card(0, 0)));
         when(cardStack4.getTopValue()).thenReturn(0);
         when(cardStack4.getSumPenalty()).thenReturn(0);
-        when(cardStack4.getCards()).thenReturn(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0)));
+        when(cardStack4.getCards()).thenReturn(List.of(new Card(0, 0)));
         when(currentCard.getValue()).thenReturn(0);
         when(gameOverView.getScene()).thenReturn(null);
 
@@ -134,45 +151,45 @@ class GameControllerTest {
     }
 
     @Test
-    void testAiChooseCard(){
-        java.util.ArrayList<com.example.jeux_6_qui_prend.model.Card> result = GameController.aiChooseCard(new java.util.ArrayList<>(java.util.List.of(new com.example.jeux_6_qui_prend.model.CardStack(new com.example.jeux_6_qui_prend.model.Card(0, 0)))));
-        Assertions.assertEquals(new java.util.ArrayList<>(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0))), result);
+    void testAiChooseCard() {
+        ArrayList<Card> result = GameController.aiChooseCard(new ArrayList<>(List.of(new CardStack(new Card(0, 0)))));
+        Assertions.assertEquals(new ArrayList<>(List.of(new Card(0, 0))), result);
     }
 
     @Test
-    void testResetCharacterCard(){
+    void testResetCharacterCard() {
         gameController.resetCharacterCard();
     }
 
     @Test
-    void testAddCardToPileEvent(){
-        when(gameModel.setFirstPileCards(any())).thenReturn(new java.util.ArrayList<>(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0))));
-        when(gameView.getCardViews()).thenReturn(new java.util.ArrayList<>(java.util.List.of(new com.example.jeux_6_qui_prend.ui.CardView(null, 0, 0))));
-        when(gameView.getPlayBtns()).thenReturn(new java.util.ArrayList<>(java.util.List.of(null)));
+    void testAddCardToPileEvent() {
+        when(gameModel.setFirstPileCards(any())).thenReturn(new ArrayList<>(List.of(new Card(0, 0))));
+        when(gameView.getCardViews()).thenReturn(new ArrayList<>(List.of(new CardView(null, 0, 0))));
+        when(gameView.getPlayBtns()).thenReturn(new ArrayList<>(List.of(null)));
         when(gameView.getComboBox()).thenReturn(null);
-        when(player.getHand()).thenReturn(new com.example.jeux_6_qui_prend.model.CardSet(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0))));
+        when(player.getHand()).thenReturn(new CardSet(List.of(new Card(0, 0))));
         when(player.getCanChooseCard()).thenReturn(Boolean.TRUE);
         when(player.getPenality()).thenReturn(0);
         when(cardStack1.getCardCount()).thenReturn(0);
-        when(cardStack1.addMayTakeIfBelowOr6th(any())).thenReturn(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0)));
+        when(cardStack1.addMayTakeIfBelowOr6th(any())).thenReturn(List.of(new Card(0, 0)));
         when(cardStack1.getTopValue()).thenReturn(0);
         when(cardStack1.getSumPenalty()).thenReturn(0);
-        when(cardStack1.getCards()).thenReturn(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0)));
+        when(cardStack1.getCards()).thenReturn(List.of(new Card(0, 0)));
         when(cardStack2.getCardCount()).thenReturn(0);
-        when(cardStack2.addMayTakeIfBelowOr6th(any())).thenReturn(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0)));
+        when(cardStack2.addMayTakeIfBelowOr6th(any())).thenReturn(List.of(new Card(0, 0)));
         when(cardStack2.getTopValue()).thenReturn(0);
         when(cardStack2.getSumPenalty()).thenReturn(0);
-        when(cardStack2.getCards()).thenReturn(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0)));
+        when(cardStack2.getCards()).thenReturn(List.of(new Card(0, 0)));
         when(cardStack3.getCardCount()).thenReturn(0);
-        when(cardStack3.addMayTakeIfBelowOr6th(any())).thenReturn(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0)));
+        when(cardStack3.addMayTakeIfBelowOr6th(any())).thenReturn(List.of(new Card(0, 0)));
         when(cardStack3.getTopValue()).thenReturn(0);
         when(cardStack3.getSumPenalty()).thenReturn(0);
-        when(cardStack3.getCards()).thenReturn(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0)));
+        when(cardStack3.getCards()).thenReturn(List.of(new Card(0, 0)));
         when(cardStack4.getCardCount()).thenReturn(0);
-        when(cardStack4.addMayTakeIfBelowOr6th(any())).thenReturn(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0)));
+        when(cardStack4.addMayTakeIfBelowOr6th(any())).thenReturn(List.of(new Card(0, 0)));
         when(cardStack4.getTopValue()).thenReturn(0);
         when(cardStack4.getSumPenalty()).thenReturn(0);
-        when(cardStack4.getCards()).thenReturn(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0)));
+        when(cardStack4.getCards()).thenReturn(List.of(new Card(0, 0)));
         when(currentCard.getValue()).thenReturn(0);
         when(gameOverView.getScene()).thenReturn(null);
 
@@ -180,7 +197,7 @@ class GameControllerTest {
     }
 
     @Test
-    void testAiPLayCard(){
+    void testAiPLayCard() {
         gameController.aiPLayCard();
     }
 }

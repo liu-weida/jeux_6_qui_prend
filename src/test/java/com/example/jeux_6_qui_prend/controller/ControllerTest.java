@@ -1,31 +1,37 @@
 package com.example.jeux_6_qui_prend.controller;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import com.example.jeux_6_qui_prend.ui.GameView;
+import com.example.jeux_6_qui_prend.ui.MenuView;
+import com.example.jeux_6_qui_prend.ui.PlayerCreationView;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-//import static org.mockito.Mockito.*;
+
+import static org.mockito.Mockito.*;
+
 class ControllerTest {
     @Mock
-    javafx.stage.Stage stage;
+    Stage stage;
     @Mock
-    com.example.jeux_6_qui_prend.ui.MenuView menuView;
+    MenuView menuView;
     @Mock
-    com.example.jeux_6_qui_prend.ui.PlayerCreationView playerCreationView;
+    PlayerCreationView playerCreationView;
     @Mock
-    com.example.jeux_6_qui_prend.ui.GameView gameView;
+    GameView gameView;
     @Mock
-    com.example.jeux_6_qui_prend.controller.GameController gameController;
+    GameController gameController;
     @Mock
-    javafx.scene.Scene menuScene;
+    Scene menuScene;
     @Mock
-    javafx.scene.Scene playerCreationScene;
+    Scene playerCreationScene;
     @Mock
-    javafx.scene.Scene gameScene;
+    Scene gameScene;
     @InjectMocks
-    com.example.jeux_6_qui_prend.controller.Controller controller;
+    Controller controller;
 
     @BeforeEach
     void setUp() {
@@ -33,7 +39,7 @@ class ControllerTest {
     }
 
     @Test
-    void testRun(){
+    void testRun() {
         when(menuView.getPlayButton()).thenReturn(null);
         when(menuView.getQuitButton()).thenReturn(null);
         when(playerCreationView.getValidateButton()).thenReturn(null);

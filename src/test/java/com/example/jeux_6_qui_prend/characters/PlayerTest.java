@@ -1,19 +1,25 @@
 package com.example.jeux_6_qui_prend.characters;
 
+import com.example.jeux_6_qui_prend.model.Card;
+import com.example.jeux_6_qui_prend.model.CardSet;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-//import static org.mockito.Mockito.*;
+
+import java.util.ArrayList;
+
+import static org.mockito.Mockito.*;
+
 class PlayerTest {
     @Mock
-    com.example.jeux_6_qui_prend.model.CardSet hand;
+    CardSet hand;
     @Mock
-    java.util.ArrayList<com.example.jeux_6_qui_prend.model.Card> tbCards;
+    ArrayList<Card> tbCards;
     @InjectMocks
-    com.example.jeux_6_qui_prend.characters.Player player;
+    Player player;
 
     @BeforeEach
     void setUp() {
@@ -21,33 +27,33 @@ class PlayerTest {
     }
 
     @Test
-    void testAddToScore(){
+    void testAddToScore() {
         player.addToScore(0);
     }
 
     @Test
-    void testRemoveCard(){
-        player.removeCard(new com.example.jeux_6_qui_prend.model.Card(0, 0));
+    void testRemoveCard() {
+        player.removeCard(new Card(0, 0));
     }
 
     @Test
-    void testGetCanChooseCard(){
-        java.lang.Boolean result = player.getCanChooseCard();
+    void testGetCanChooseCard() {
+        Boolean result = player.getCanChooseCard();
         Assertions.assertEquals(Boolean.TRUE, result);
     }
 
     @Test
-    void testSetChooseCard(){
+    void testSetChooseCard() {
         player.setChooseCard(Boolean.TRUE);
     }
 
     @Test
-    void testSetCanPLayCard(){
+    void testSetCanPLayCard() {
         player.setCanPLayCard(Boolean.TRUE);
     }
 
     @Test
-    void testAddPenality(){
+    void testAddPenality() {
         player.addPenality(0);
     }
 }

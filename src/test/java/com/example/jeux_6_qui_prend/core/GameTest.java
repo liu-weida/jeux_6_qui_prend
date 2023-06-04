@@ -1,32 +1,37 @@
 package com.example.jeux_6_qui_prend.core;
 
-import org.junit.Assert;
-import org.junit.Test;
+import com.example.jeux_6_qui_prend.controller.Controller;
+import com.example.jeux_6_qui_prend.ui.MenuView;
+import javafx.scene.Scene;
+import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
 import org.junit.Before;
+import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-//import static org.mockito.Mockito.*;
+
+import static org.mockito.Mockito.*;
 
 public class GameTest {
     @Mock
-    javafx.stage.Stage stage;
+    Stage stage;
     @Mock
-    javafx.scene.Scene menuScene;
+    Scene menuScene;
     @Mock
-    javafx.scene.Scene playerCreationScene;
+    Scene playerCreationScene;
     @Mock
-    javafx.scene.Scene gameScene;
+    Scene gameScene;
     @Mock
-    javafx.scene.Scene endScene;
+    Scene endScene;
     @Mock
-    com.example.jeux_6_qui_prend.ui.MenuView menuView;
+    MenuView menuView;
     @Mock
-    javafx.scene.layout.BorderPane menuBorderPanel;
+    BorderPane menuBorderPanel;
     @Mock
-    com.example.jeux_6_qui_prend.controller.Controller controller;
+    Controller controller;
     @InjectMocks
-    com.example.jeux_6_qui_prend.core.Game game;
+    Game game;
 
     @Before
     public void setUp() {

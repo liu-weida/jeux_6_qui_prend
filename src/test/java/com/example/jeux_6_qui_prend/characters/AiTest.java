@@ -1,19 +1,28 @@
 package com.example.jeux_6_qui_prend.characters;
 
+import com.example.jeux_6_qui_prend.model.Card;
+import com.example.jeux_6_qui_prend.model.CardSet;
+import com.example.jeux_6_qui_prend.model.CardStack;
+import com.example.jeux_6_qui_prend.ui.GameView;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-//import static org.mockito.Mockito.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.mockito.Mockito.*;
+
 class AiTest {
     @Mock
-    com.example.jeux_6_qui_prend.model.CardSet hand;
+    CardSet hand;
     @Mock
-    java.util.ArrayList<com.example.jeux_6_qui_prend.model.Card> tbCards;
+    ArrayList<Card> tbCards;
     @InjectMocks
-    com.example.jeux_6_qui_prend.characters.Ai ai;
+    Ai ai;
 
     @BeforeEach
     void setUp() {
@@ -21,46 +30,46 @@ class AiTest {
     }
 
     @Test
-    void testSelectCard(){
-        when(hand.remains()).thenReturn(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0)));
+    void testSelectCard() {
+        when(hand.remains()).thenReturn(List.of(new Card(0, 0)));
 
-        com.example.jeux_6_qui_prend.model.Card result = ai.selectCard(new java.util.ArrayList<>(java.util.List.of(new com.example.jeux_6_qui_prend.model.CardStack(new com.example.jeux_6_qui_prend.model.Card(0, 0)))));
-        Assertions.assertEquals(new com.example.jeux_6_qui_prend.model.Card(0, 0), result);
+        Card result = ai.selectCard(new ArrayList<>(List.of(new CardStack(new Card(0, 0)))));
+        Assertions.assertEquals(new Card(0, 0), result);
     }
 
     @Test
-    void testPlayCard(){
-        ai.playCard(new java.util.ArrayList<>(java.util.List.of(new com.example.jeux_6_qui_prend.model.CardStack(new com.example.jeux_6_qui_prend.model.Card(0, 0)))), new com.example.jeux_6_qui_prend.model.Card(0, 0), new com.example.jeux_6_qui_prend.ui.GameView());
+    void testPlayCard() {
+        ai.playCard(new ArrayList<>(List.of(new CardStack(new Card(0, 0)))), new Card(0, 0), new GameView());
     }
 
     @Test
-    void testAddToScore(){
+    void testAddToScore() {
         ai.addToScore(0);
     }
 
     @Test
-    void testRemoveCard(){
-        ai.removeCard(new com.example.jeux_6_qui_prend.model.Card(0, 0));
+    void testRemoveCard() {
+        ai.removeCard(new Card(0, 0));
     }
 
     @Test
-    void testGetCanChooseCard(){
-        java.lang.Boolean result = ai.getCanChooseCard();
+    void testGetCanChooseCard() {
+        Boolean result = ai.getCanChooseCard();
         Assertions.assertEquals(Boolean.TRUE, result);
     }
 
     @Test
-    void testSetChooseCard(){
+    void testSetChooseCard() {
         ai.setChooseCard(Boolean.TRUE);
     }
 
     @Test
-    void testSetCanPLayCard(){
+    void testSetCanPLayCard() {
         ai.setCanPLayCard(Boolean.TRUE);
     }
 
     @Test
-    void testAddPenality(){
+    void testAddPenality() {
         ai.addPenality(0);
     }
 }

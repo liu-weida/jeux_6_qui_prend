@@ -1,27 +1,33 @@
 package com.example.jeux_6_qui_prend.ui;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import javafx.scene.Scene;
+import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
 import org.junit.jupiter.api.BeforeEach;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-//import static org.mockito.Mockito.*;
+
+import static org.mockito.Mockito.*;
+
 class GameOverViewTest {
     @Mock
-    javafx.scene.control.TextField textField;
+    TextField textField;
     @Mock
-    javafx.scene.image.ImageView imageView;
+    ImageView imageView;
     @Mock
-    javafx.scene.image.Image gameOver;
+    Image gameOver;
     @Mock
-    javafx.stage.Stage mainStage;
+    Stage mainStage;
     @Mock
-    javafx.scene.Scene scene;
+    Scene scene;
     @Mock
-    javafx.scene.layout.BorderPane component;
+    BorderPane component;
     @InjectMocks
-    com.example.jeux_6_qui_prend.ui.GameOverView gameOverView;
+    GameOverView gameOverView;
 
     @BeforeEach
     void setUp() {

@@ -2,18 +2,19 @@ package com.example.jeux_6_qui_prend.model;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
 class CardTest {
-    com.example.jeux_6_qui_prend.model.Card card= new com.example.jeux_6_qui_prend.model.Card(0, 0);
+    Card card = new Card(0, 0);
 
     @Test
-    void testToString(){
-        java.lang.String result = card.toString();
+    void testToString() {
+        String result = card.toString();
         Assertions.assertEquals("replaceMeWithExpectedResult", result);
     }
 
     @Test
-    void testCompareTo(){
-        int result = card.compareTo(new com.example.jeux_6_qui_prend.model.Card(0, 0));
+    void testCompareTo() {
+        int result = card.compareTo(new Card(0, 0));
         Assertions.assertEquals(0, result);
     }
 }

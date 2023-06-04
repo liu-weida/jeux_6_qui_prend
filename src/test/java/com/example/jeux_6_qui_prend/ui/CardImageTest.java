@@ -1,17 +1,21 @@
 package com.example.jeux_6_qui_prend.ui;
 
+import com.example.jeux_6_qui_prend.model.Card;
+import javafx.scene.image.Image;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-//import static org.mockito.Mockito.*;
+
+import static org.mockito.Mockito.*;
+
 class CardImageTest {
     @Mock
-    javafx.scene.image.Image backsideImage;
+    Image backsideImage;
     @InjectMocks
-    com.example.jeux_6_qui_prend.ui.CardImage cardImage;
+    CardImage cardImage;
 
     @BeforeEach
     void setUp() {
@@ -19,8 +23,8 @@ class CardImageTest {
     }
 
     @Test
-    void testGetFrontCardImage(){
-        javafx.scene.image.Image result = CardImage.getFrontCardImage(new com.example.jeux_6_qui_prend.model.Card(0, 0));
+    void testGetFrontCardImage() {
+        Image result = CardImage.getFrontCardImage(new Card(0, 0));
         Assertions.assertEquals(null, result);
     }
 }

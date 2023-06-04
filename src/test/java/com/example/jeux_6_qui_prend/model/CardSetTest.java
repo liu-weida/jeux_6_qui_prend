@@ -1,17 +1,23 @@
 package com.example.jeux_6_qui_prend.model;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-//import static org.mockito.Mockito.*;
+
+import java.util.Collection;
+import java.util.List;
+import java.util.TreeSet;
+
+import static org.mockito.Mockito.*;
+
 class CardSetTest {
     @Mock
-    java.util.TreeSet<com.example.jeux_6_qui_prend.model.Card> cards;
+    TreeSet<Card> cards;
     @InjectMocks
-    com.example.jeux_6_qui_prend.model.CardSet cardSet;
+    CardSet cardSet;
 
     @BeforeEach
     void setUp() {
@@ -19,19 +25,19 @@ class CardSetTest {
     }
 
     @Test
-    void testRemains(){
-        java.util.Collection<com.example.jeux_6_qui_prend.model.Card> result = cardSet.remains();
-        Assertions.assertEquals(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0)), result);
+    void testRemains() {
+        Collection<Card> result = cardSet.remains();
+        Assertions.assertEquals(List.of(new Card(0, 0)), result);
     }
 
     @Test
-    void testTake(){
-        cardSet.take(new com.example.jeux_6_qui_prend.model.Card(0, 0));
+    void testTake() {
+        cardSet.take(new Card(0, 0));
     }
 
     @Test
-    void testRemoveCard(){
-        cardSet.removeCard(new com.example.jeux_6_qui_prend.model.Card(0, 0));
+    void testRemoveCard() {
+        cardSet.removeCard(new Card(0, 0));
     }
 }
 

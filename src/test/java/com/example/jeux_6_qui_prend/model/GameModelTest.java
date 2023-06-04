@@ -1,48 +1,54 @@
 package com.example.jeux_6_qui_prend.model;
 
+import com.example.jeux_6_qui_prend.characters.Character;
+import com.example.jeux_6_qui_prend.characters.Player;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+import java.util.List;
+
 class GameModelTest {
-    com.example.jeux_6_qui_prend.model.GameModel gameModel= new com.example.jeux_6_qui_prend.model.GameModel();
+    GameModel gameModel = new GameModel();
 
     @Test
-    void testRemoveCharacterCard(){
-        gameModel.removeCharacterCard(new com.example.jeux_6_qui_prend.characters.Player(), new com.example.jeux_6_qui_prend.model.Card(0, 0));
+    void testRemoveCharacterCard() {
+        gameModel.removeCharacterCard(new Player(), new Card(0, 0));
     }
 
     @Test
-    void testPlayOrder(){
-        java.util.ArrayList<com.example.jeux_6_qui_prend.characters.Character> result = gameModel.playOrder(new java.util.ArrayList<>(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0))), new java.util.ArrayList<>(java.util.List.of(new com.example.jeux_6_qui_prend.characters.Player())));
-        Assertions.assertEquals(new java.util.ArrayList<>(java.util.List.of(new com.example.jeux_6_qui_prend.characters.Player())), result);
+    void testPlayOrder() {
+        ArrayList<Character> result = gameModel.playOrder(new ArrayList<>(List.of(new Card(0, 0))), new ArrayList<>(List.of(new Player())));
+        Assertions.assertEquals(new ArrayList<>(List.of(new Player())), result);
     }
 
     @Test
-    void testCardOrder(){
-        java.util.ArrayList<com.example.jeux_6_qui_prend.model.Card> result = gameModel.cardOrder(new java.util.ArrayList<>(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0))));
-        Assertions.assertEquals(new java.util.ArrayList<>(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0))), result);
+    void testCardOrder() {
+        ArrayList<Card> result = gameModel.cardOrder(new ArrayList<>(List.of(new Card(0, 0))));
+        Assertions.assertEquals(new ArrayList<>(List.of(new Card(0, 0))), result);
     }
 
     @Test
-    void testIsCardPresent(){
-        boolean result = GameModel.isCardPresent(new com.example.jeux_6_qui_prend.model.Card(0, 0), java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0)));
+    void testIsCardPresent() {
+        boolean result = GameModel.isCardPresent(new Card(0, 0), List.of(new Card(0, 0)));
         Assertions.assertEquals(true, result);
     }
 
     @Test
-    void testSortCard(){
-        java.util.ArrayList<com.example.jeux_6_qui_prend.model.Card> result = gameModel.sortCard(new java.util.ArrayList<>(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0))));
-        Assertions.assertEquals(new java.util.ArrayList<>(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0))), result);
+    void testSortCard() {
+        ArrayList<Card> result = gameModel.sortCard(new ArrayList<>(List.of(new Card(0, 0))));
+        Assertions.assertEquals(new ArrayList<>(List.of(new Card(0, 0))), result);
     }
 
     @Test
-    void testSetFirstPileCards(){
-        java.util.ArrayList<com.example.jeux_6_qui_prend.model.Card> result = gameModel.setFirstPileCards(new java.util.ArrayList<>(java.util.List.of(new com.example.jeux_6_qui_prend.characters.Player())));
-        Assertions.assertEquals(new java.util.ArrayList<>(java.util.List.of(new com.example.jeux_6_qui_prend.model.Card(0, 0))), result);
+    void testSetFirstPileCards() {
+        ArrayList<Card> result = gameModel.setFirstPileCards(new ArrayList<>(List.of(new Player())));
+        Assertions.assertEquals(new ArrayList<>(List.of(new Card(0, 0))), result);
     }
 
     @Test
-    void testClearAllCardStack(){
-        gameModel.clearAllCardStack(new java.util.ArrayList<>(java.util.List.of(new com.example.jeux_6_qui_prend.model.CardStack(new com.example.jeux_6_qui_prend.model.Card(0, 0)))));
+    void testClearAllCardStack() {
+        gameModel.clearAllCardStack(new ArrayList<>(List.of(new CardStack(new Card(0, 0)))));
     }
 }
 

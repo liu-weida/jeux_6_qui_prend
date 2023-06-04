@@ -1,25 +1,29 @@
 package com.example.jeux_6_qui_prend.ui;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.StackPane;
 import org.junit.jupiter.api.BeforeEach;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-//import static org.mockito.Mockito.*;
+
+import static org.mockito.Mockito.*;
+
 class PlayerCreationViewTest {
     @Mock
-    javafx.scene.layout.StackPane component;
+    StackPane component;
     @Mock
-    javafx.scene.image.ImageView backgroundView;
+    ImageView backgroundView;
     @Mock
-    javafx.scene.control.Button validateButton;
+    Button validateButton;
     @Mock
-    javafx.scene.control.TextField humanPlayersField;
+    TextField humanPlayersField;
     @Mock
-    javafx.scene.control.TextField aiPlayersField;
+    TextField aiPlayersField;
     @InjectMocks
-    com.example.jeux_6_qui_prend.ui.PlayerCreationView playerCreationView;
+    PlayerCreationView playerCreationView;
 
     @BeforeEach
     void setUp() {

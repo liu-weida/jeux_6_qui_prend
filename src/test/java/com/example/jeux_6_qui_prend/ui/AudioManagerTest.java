@@ -1,17 +1,21 @@
 package com.example.jeux_6_qui_prend.ui;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import javafx.scene.media.MediaPlayer;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-//import static org.mockito.Mockito.*;
+
+import java.util.Map;
+
+import static org.mockito.Mockito.*;
+
 class AudioManagerTest {
     @Mock
-    java.util.Map<java.lang.String,javafx.scene.media.MediaPlayer> mediaPlayers;
+    Map<String, MediaPlayer> mediaPlayers;
     @InjectMocks
-    com.example.jeux_6_qui_prend.ui.AudioManager audioManager;
+    AudioManager audioManager;
 
     @BeforeEach
     void setUp() {
@@ -19,32 +23,32 @@ class AudioManagerTest {
     }
 
     @Test
-    void testLoad(){
+    void testLoad() {
         AudioManager.load("name", "mediaUrl");
     }
 
     @Test
-    void testPlay(){
+    void testPlay() {
         AudioManager.play("name");
     }
 
     @Test
-    void testStop(){
+    void testStop() {
         AudioManager.stop("name");
     }
 
     @Test
-    void testSetBgm(){
+    void testSetBgm() {
         AudioManager.setBgm("name");
     }
 
     @Test
-    void testPlayBgm(){
+    void testPlayBgm() {
         AudioManager.playBgm();
     }
 
     @Test
-    void testStopBgm(){
+    void testStopBgm() {
         AudioManager.stopBgm();
     }
 }
